@@ -1,0 +1,531 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Cuprum";
+  src: url("../fonts/cuprum.woff2") format("woff2"),
+  url("../fonts/cuprum.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum Bold";
+  src: url("../fonts/cuprumbold.woff2") format("woff2"),
+  url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cuprum Bold italic";
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
+  url("../fonts/cuprumbolditalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cuprum italic";
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+  url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+  url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400 ;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+  url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700 ;
+  font-style: normal;
+}
+
+/* Variables */
+
+ :root {
+   --color-1-darkest : #000000;
+   --color-1-darker : #293449;
+   --color-2-darker : #212A3A;
+   --color-3-darker : #32425C;
+   --color-4-darker : #444444;
+   --color-1-dark : #BA2732;
+   --color-2-dark : #518534;
+   --color-1 : #EE3643;
+   --color-2 : #CA2C37;
+   --color-3 : #63A63E;
+   --color-4 : #FFBF47;
+   --color-5 : #3BBCE3;
+   --color-6 : #DC91D8;
+   --color-7 : #5FBB2D;
+   --color-8 : #FFD27E;
+   --color-9 : #76D0EB;
+   --color-10 : #E6B2E4;
+   --color-11 : #FFC047;
+   --color-1-light : #8ED78F;
+   --color-2-light : #FFD180;
+   --color-3-light: #FFDA96;
+   --color-4-light :#FFD37E;
+   --color-5-light :#B0E3B1;
+   --color-6-light : #B7BFC8;
+   --color-7-light : #C5C5C5;
+   --color-8-light : #A9A9A9;
+   --color-9-light : #B5B5B5;
+   --color-10-light : #C1C6CE;
+   --color-12-light : #ABABAB;
+   --color-13-light : #C4C4C4;
+   --color-14-light : #8A8E94;
+   --color-1-lighter: #F3F7F9;
+   --color-2-lighter: #F3F7F8;
+   --color-3-lighter: #D7DCDE;
+   --color-4-lighter: #F9F5F0;
+   --color-5-lighter: #EAEAEA;
+   --color-6-lighter: #B2B2B2;
+   --color-1-lightest: #FFFFFF;
+   --color-2-lightest: #F7F3EC;
+   --color-3-lightest: #E5E5E5;
+   --color-4-lightest: #F1F5F7;
+   --color-5-lightest: #F1F1F1;
+   --color-6-lightest: #F2F6F8;
+ }
+/* Global */
+
+body {
+  font-family: "PT Sans", Arial, sans-serif ;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-1-darkest);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+
+/* Header */
+.body-header{
+ background-color: var(--color-2-lighter);
+}
+
+.wraper-background {
+background-color: var(--color-1-darker);
+}
+
+.header-logo,
+.footer-logo {
+  background-color: var(--color-1);
+}
+
+/* .link-logo {
+  background-color: var(--color-1);
+} */
+
+.header-link {
+  color: var(--color-1-lightest);
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.bookmark a:hover,
+.bookmark a:focus,
+.bookmark a:active {
+  background-color: var(--color-1);
+}
+
+.bookmark a:visited {
+  background-color: var(--color-14-light);
+}
+
+.link-order {
+  background-color: var(--color-3 );
+}
+
+.online-store {
+  font-family: "Cuprum italic";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--color-1);
+}
+
+.contacts-information {
+  color: var(--color-3-darker);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.contacts-phone {
+  color: var(--color-1);
+  font-family: "Cuprum Bold";
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.login-link,
+.registration-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--color-1-darkest);
+}
+
+.nav-list{
+  background-color: var(--color-1-darker);
+}
+
+.nav-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-1-lightest);
+}
+/* catalog */
+.name-user {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--color-1-darkest);
+}
+
+.modal-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-3-darker);
+}
+
+/* main-page */
+
+.main-title {
+  color: var(--color-1-lightest);
+  font-family: "Cuprum";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.main-item:nth-child(1) {
+  background-color: var(--color-4);
+}
+
+.main-item:nth-child(2)  {
+  background-color: var(--color-5);
+}
+
+.main-item:nth-child(3) {
+  background-color: var(--color-6);
+}
+
+.link {
+  color: var(--color-1-lightest);
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.body-item:nth-child(2) {
+  background-color: var(--color-1-light);
+}
+.body-item:nth-child(3) {
+  background-color: var(--color-11 );
+}
+.link-one{
+  background-color: var(--color-8);
+}
+.link-two {
+  background-color: var(--color-9);
+}
+.link-three {
+  background-color: var(--color-10);
+}
+.link-four{
+  background-color: var(--color-5-light);
+}
+
+.link-five {
+  background-color: var(--color-4-light);
+}
+
+.title-text {
+  font-family: "Cuprum";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  /* color: var(--color-1-lightest); */
+}
+
+.paragraph-text {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--color-1-lightest);
+  background-color: var(--color-1);
+}
+
+/* main-catalog */
+
+.catalog-link,
+.catalog-sorting-link {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+
+}
+.catalog-link {
+  color: var(--color-1-darkest);
+}
+
+.catalog-title {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(---color-3-darker);
+  background-color: var(--color-6-lightest);
+}
+
+.catalog-sorting-link {
+  color: var(--color-6-lighter);
+}
+
+.catalog-sorting-list,
+.catalog-filter {
+  background-color: var(--color-2-lightest);
+}
+.sorting-title,
+.catalog-filter {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-1-darkest);
+}
+
+.caption-filter {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--color-1-darkest);
+}
+
+.catalog-filter-item {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--color-1-darkest);
+}
+
+.button-buy,
+.button-bookmarks {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.button-buy {
+  color: var(--color-1-lightest);
+  background-color: var(--color-3);
+}
+.button-bookmarks {
+border: 2px solid var(--color-3);
+}
+
+/* Хлебные крошки каталог */
+
+.pagination-link {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-1-darkest);
+}
+.link-active{
+  color: var(--color-1-lightest);
+  background-color: var(--color-1);
+}
+
+/* Пара слов о перфораторах */
+
+.about-perforators {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--color-1-darkest);
+}
+.descr-perforators {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--color-1-darkest);
+}
+
+
+/* section-popular*/
+
+.popular-title {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--color-3-darker);
+}
+
+.goods-perforator {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(---color-1-darkest);
+}
+
+.price {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--color-8-light);
+}
+
+.old-price {
+  color: var(--color-8-light);
+}
+
+.new-price {
+  color: var(--color-1-lightest);
+  background-color: var(--color-1);
+}
+
+/* section-service */
+
+.section-service {
+ background-color: var(--color-4-lightest);
+}
+
+.service-title,
+.company-title {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--color-1-darkest);
+}
+
+.service-text,
+.company-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--color-1-darkest);
+}
+
+.service-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--color-3-darker);
+}
+
+.service-text {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(color-1-darkest);
+}
+
+.company-list {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(color-1-darkest);
+}
+
+/* Footer */
+
+.main-footer {
+  background-color: var(--color-3-darker);
+}
+
+.footer-information,
+.footer-navigation-link,
+.footer-link {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-1-lighter);
+}
+
+.footer-phone {
+  color: var(--color-1-lighter);
+}
+
+.footer-navigation-link {
+  color: var(--color-4-lightest);
+}
+
+.footer-link {
+  color: var(--color-2-light);
+}
+
+.footer-background {
+  background-color:var(--color-1-darker);
+}
+
+.footer-rights,
+.footer-text {
+  font-family: "Cuprum";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-1-lightest);
+}
+
+.social-button {
+  background-color: var(--color-2-darker);
+}
+
+.footer-email {
+ color: var(--color-2-light);
+}
+
