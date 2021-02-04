@@ -54,8 +54,10 @@
    --color-1-darkest : #000000;
    --color-1-darker : #293449;
    --color-2-darker : #212A3A;
-   --color-3-darker : #32425C;
-   --color-4-darker : #444444;
+   --color-3-darker : #161D29;
+   --color-4-darker : #32425C;
+   --color-5-darker : #444444;
+   --color-5-darker : #1D2739;
    --color-1-dark : #BA2732;
    --color-2-dark : #518534;
    --color-1 : #EE3643;
@@ -69,6 +71,7 @@
    --color-9 : #76D0EB;
    --color-10 : #E6B2E4;
    --color-11 : #FFC047;
+   --color-12 : #EEC16D;
    --color-1-light : #8ED78F;
    --color-2-light : #FFD180;
    --color-3-light: #FFDA96;
@@ -114,11 +117,6 @@ img {
   height: auto;
 }
 
-li {
-  list-style: none;
-}
-
-
 /* Header */
 .body-header{
  background-color: var(--color-2-lighter);
@@ -128,14 +126,31 @@ li {
 background-color: var(--color-1-darker);
 }
 
-.header-logo,
-.footer-logo {
+.header-logo:active,
+.footer-logo:active {
+  background-color: var(--color-1-dark) ;
+}
+
+ .header-logo,
+ .footer-logo{
   background-color: var(--color-1);
 }
 
-/* .link-logo {
-  background-color: var(--color-1);
-} */
+.header-input {
+  outline: none;
+  border: 0;
+  background-color: var(--color-1-darker);
+}
+.header-input::-webkit-input-placeholder {
+  color: var(--color-1-lightest);
+}
+.header-input:active::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.header-input:focus {
+ background-color: var(--color-1-lightest);
+ color: var(--color-1-darkest);
+}
 
 .header-link {
   color: var(--color-1-lightest);
@@ -144,18 +159,25 @@ background-color: var(--color-1-darker);
   font-size: 18px;
   line-height: 24px;
 }
-.bookmark a:hover,
-.bookmark a:focus,
-.bookmark a:active {
-  background-color: var(--color-1);
+.header-link:active {
+  color: rgba(255, 255, 255, 0.5);
 }
-
-.bookmark a:visited {
-  background-color: var(--color-14-light);
+.full-basket{
+  background-color: var(--color-1 );
+}
+.bookmark:active {
+  background-color: var(--color-3-darker);
 }
 
 .link-order {
   background-color: var(--color-3 );
+}
+.link-order:hover{
+  background-color: var(--color-7 );
+  color: var(--color-1-lightest);
+}
+.link-order:active {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .store-description {
@@ -189,19 +211,44 @@ background-color: var(--color-1-darker);
   font-size: 21px;
   line-height: 21px;
   color: var(--color-1-darkest);
+  background-color: var(--color-1-lightest);
 }
 
-.nav-list{
+.login-link:hover,
+.registration-link:hover,
+.my-order:hover,
+.personal-cabinet:hover{
+  color: var( --color-1);
+}
+
+.login-link:active,
+.registration-link:active,
+.my-order:active,
+.personal-cabinet:active{
+  color: rgba(197, 197, 197, 1);
+
+}
+
+.header-navigation-list{
+  list-style: none;
   background-color: var(--color-1-darker);
 }
 
-.nav-link {
+.header-navigation-link{
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--color-1-lightest);
 }
+.header-navigation-link:hover {
+background-color: var(--color-1-darkest);
+}
+.header-navigation-link:active {
+  background-color: var(--color-5-darker);
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* catalog */
 .name-user {
   font-family: "Cuprum", Arial, sans-serif;
@@ -219,9 +266,12 @@ background-color: var(--color-1-darker);
   color: var(--color-3-darker);
 }
 
-/* main-page */
+/* product-page */
+.product-list {
+  list-style: none;
+}
 
-.main-title {
+.product-title {
   color: var(--color-1-lightest);
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
@@ -232,15 +282,12 @@ background-color: var(--color-1-darker);
 .item-material {
   background-color: var(--color-4);
 }
-
 .item-tool {
   background-color: var(--color-5);
 }
-
 .item-technics {
   background-color: var(--color-6);
 }
-
 .item-discount {
   background-color: var(--color-1-light);
 }
@@ -248,7 +295,7 @@ background-color: var(--color-1-darker);
   background-color: var(--color-11 );
 }
 
-.link {
+.product-link {
   color: var(--color-1-lightest);
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
@@ -256,22 +303,56 @@ background-color: var(--color-1-darker);
   line-height: 18px;
 }
 
-.link-material{
+.link-material {
   background-color: var(--color-8);
 }
+.link-material:hover {
+  background-color: rgba(238, 193, 109, 0.3);
+}
+.link-material:active {
+  background-color: rgba(229, 184, 100, 1);
+}
+
 .link-tool {
   background-color: var(--color-9);
 }
+.link-tool:hover {
+  background-color:  rgba(118, 208, 235, 0.3);
+}
+.link-tool:active {
+  background-color: rgba(118, 208, 235, 1);
+}
+
 .link-technics {
   background-color: var(--color-10);
 }
-.link-discount{
+.link-technics:hover {
+  background-color: rgba(230, 178, 228, 0.3);
+}
+.link-technics:active {
+  background-color: rgba(230, 178, 228, 1);
+}
+
+.link-discount {
   background-color: var(--color-5-light);
 }
+.link-discount:hover {
+  background-color: rgba(176, 227, 177, 0.3);
+}
+.link-discount:active {
+  background-color: rgba(176, 227, 177, 0.1);
+}
+
 .link-delivery{
   background-color: var(--color-4-light);
 }
+.link-delivery:hover{
+  background-color: rgba(255, 211, 126, 0.3);
+}
 
+.link-delivery:hover{
+  background-color: rgba(255, 211, 126, 0.1);
+}
 .title-text {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 700;
@@ -294,20 +375,55 @@ background-color: var(--color-1-darker);
   line-height: 18px;
   color: var(--color-1-lightest);
   background-color: var(--color-1);
+  outline: none;
+  border: 0;
+}
+.button:hover {
+  background-color: rgba(202, 44, 55, 1);
+}
+.button:active {
+  background-color: rgba(186, 39, 50, 1);
 }
 
+
+/* Хлебные крошки каталог */
+
+.breadcrumbs-list,
+.catalog-filter-list,
+.perforator-list,
+.catalog-pagination-list  {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-1-darkest);
+}
+
+.link-active{
+  color: var(--color-1-lightest);
+  background-color: var(--color-1);
+}
 /* main-catalog */
 
-.catalog-link,
 .catalog-sorting-link {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  color: var(--color-6-lighter);
+  border-bottom: 1px dotted var(--color-1);
+}
+.catalog-sorting-link:hover {
+  color:rgba(0, 0, 0, 1);
+  border-bottom: 1px solid var(--color-1);
+}
+.catalog-sorting-link:active {
+  color: rgba(238, 54, 67, 1);
+  border-bottom: none;
+}
 
-}
-.catalog-link {
-  color: var(--color-1-darkest);
-}
 
 .catalog-title {
   font-family: "Cuprum", Arial, sans-serif;
@@ -318,14 +434,16 @@ background-color: var(--color-1-darker);
   background-color: var(--color-6-lightest);
 }
 
-.catalog-sorting-link {
-  color: var(--color-6-lighter);
+.catalog-sorting-list{
+  background-color: var(--color-2-lightest);
+  list-style: none;
 }
 
-.catalog-sorting-list,
+.
 .catalog-filter {
   background-color: var(--color-2-lightest);
 }
+
 .sorting-title,
 .catalog-filter {
   font-weight: 400;
@@ -354,27 +472,34 @@ background-color: var(--color-1-darker);
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  outline: none;
+  border: 0;
 }
 .button-buy {
   color: var(--color-1-lightest);
   background-color: var(--color-3);
 }
+.button-buy:hover {
+  background-color: rgba(95, 187, 45, 1);
+}
+
+.button-buy:active{
+  background-color: rgba(81, 133, 52, 1);
+}
+
 .button-bookmarks {
-border: 2px solid var(--color-3);
+  border: 2px solid var(--color-3);
+  color: rgba(63, 78, 103, 1)
+}
+.button-bookmarks:hover {
+  border: 2px solid rgba(50, 66, 92, 1);
+  color: rgba(50, 66, 92, 1);
+}
+.button-bookmarks:active{
+  border: 2px solid rgba(152, 160, 173, 1);
+  color: rgba(152, 160, 173, 1);
 }
 
-/* Хлебные крошки каталог */
-
-.pagination-link {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 18px;
-  color: var(--color-1-darkest);
-}
-.link-active{
-  color: var(--color-1-lightest);
-  background-color: var(--color-1);
-}
 
 /* Пара слов о перфораторах */
 
@@ -394,6 +519,13 @@ border: 2px solid var(--color-3);
 
 
 /* section-popular*/
+
+.goods-list,
+.producer-list,
+.service-list,
+.company-list {
+  list-style: none;
+}
 
 .popular-title {
   font-family: "Cuprum", Arial, sans-serif;
@@ -477,6 +609,11 @@ border: 2px solid var(--color-3);
 .main-footer {
   background-color: var(--color-3-darker);
 }
+.footer-navigation-list,
+.footer-list,
+.social-list{
+  list-style: none;
+}
 
 .footer-information,
 .footer-navigation-link,
@@ -495,17 +632,30 @@ border: 2px solid var(--color-3);
 .footer-navigation-link {
   color: var(--color-4-lightest);
 }
+.footer-navigation-link:hover {
+  border-bottom: 1px solid var(--color-4-lightest);
+}
+.footer-navigation-link:active {
+  border-bottom: none;
+  color: rgba(145, 155, 169, 1);
+}
 
 .footer-link {
   color: var(--color-2-light);
 }
+.footer-link:hover {
+ border-bottom: 1px solid var(--color-2-light);
+}
+.footer-link:active{
+  border-bottom: none;
+  color: rgba(152, 137, 110, 1);
+ }
 
 .footer-background {
   background-color:var(--color-1-darker);
 }
 
-.footer-rights,
-.footer-text {
+.footer-copyright {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -519,5 +669,12 @@ border: 2px solid var(--color-3);
 
 .footer-email {
  color: var(--color-2-light);
+}
+.footer-email:hover {
+  border-bottom: 1px solid rgba(255, 209, 128, 1);
+}
+.footer-email:active {
+  border-bottom: none;
+  color: rgba(238, 54, 67, 1);
 }
 
