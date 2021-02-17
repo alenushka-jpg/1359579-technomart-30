@@ -19,28 +19,28 @@
         <img class="header-logo" src="img/logo-technomart.svg" width="107" height="17" alt="Логотип Техномарта"/>
       </a>
       <form class="header-search" action="#" method="POST">
-        <input class="header-input" type="search" placeholder="Поиск:" />
+        <div class="input-before">
+          <input class="header-input" type="search" placeholder="Поиск:" />
+        </div>
       </form>
-      <a class="header-link" href="blank.html">Закладки: 0</a>
-      <a class="header-link full-basket" href="blank.html">Корзина: 10</a>
+      <a class="header-link bookmark" href="blank.html">Закладки: 0</a>
+      <a class="header-link full-basket basket" href="blank.html">Корзина: 10</a>
       <a class="header-link link-order" href="blank.html">Оформить заказ</a>
     </div>
     </div>
-    <div class="container-center">
-    <div class="container-header">
+    <div class="container-center container-header">
       <p class="store-description">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
       <p class="contacts-information">
-        <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a> <br>
+        <a class="contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       </p>
       <div class="container-link">
-      <h3 class="name-user">Равшан Джамшутович</h3>
-      <a class="my-order" href="blank.html">Мои заказы</a>
-      <a class="personal-cabinet" href="blank.html">Личный кабинет</a>
+        <h3 class="name-user">Равшан Джамшутович</h3>
+        <!-- <a class="my-order" href="blank.html">Мои заказы</a>
+        <a class="personal-cabinet" href="blank.html">Личный кабинет</a> -->
       </div>
     </div>
-    </div>
-      <nav class="header-navigation">
+      <nav class="container-center">
         <ul  class="header-navigation-list">
           <li class="header-navigation-item">
             <a class="header-navigation-link" href="index.html">Главная</a>
@@ -298,22 +298,21 @@
               </p>
            </li>
         </ul>
+        <ul class="catalog-pagination-list">
+          <li class="catalog-pagination-item">
+            <a class="pagination-link link-active">1</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="pagination-link " href="blank.html">2</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="pagination-link" href="blank.html">3</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="pagination-link" href="blank.html">следующая</a>
+          </li>
+        </ul>
     </div>
-      <ul class="catalog-pagination-list">
-        <li class="catalog-pagination-item">
-          <a class="pagination-link link-active">1</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="pagination-link " href="blank.html">2</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="pagination-link" href="blank.html">3</a>
-        </li>
-        <li class="catalog-pagination-item">
-          <a class="pagination-link" href="blank.html">следующая</a>
-        </li>
-      </ul>
-
     </section>
   </div>
     <section class="section-about-perforators">
@@ -334,10 +333,10 @@
       <section class="section-footer container-center">
         <!-- <h2>Контактная информация</h2> -->
         <div class="wrapper-container-footer">
-        <a>
+        <a class="footer-logo-link">
           <img class="footer-logo" src="img/logo-technomart.svg" width="138" height="23" alt="Логотип Техномарта"/>
         </a>
-          <ul class="footer-navigation-list">
+           <ul class="footer-navigation-list">
              <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="blank.html">Компания</a>
              </li>
@@ -353,7 +352,7 @@
              <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="blank.html">Контакты</a>
              </li>
-          </ul>
+           </ul>
         </div>
           <div class="wrapper-footer-inner">
             <p class="footer-information">
@@ -376,7 +375,7 @@
           </ul>
         </div>
       </section>
-      <div class="footer-background ">
+      <div class="footer-background">
       <div class="container-footer  container-center">
         <p class="footer-copyright">&#169; 2010–2019 Компания «Техномарт» <br> Все права защищены</p>
       <section class="footer-social">
@@ -406,7 +405,7 @@
         <p class="footer-copyright">Обратная связь: <br>
           <a class="footer-email" href=mailto:mail@htmlacademy.ru>mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-copyright">Разработано <br>
+        <p class="footer-copyright copyright-margin">Разработано <br>
           <a class="footer-email" href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </div>

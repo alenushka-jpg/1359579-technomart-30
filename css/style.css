@@ -290,7 +290,6 @@ img {
 }
 
 .contacts-information {
-  display: block;
   color: var(--color-3-darker);
   font-weight: 400;
   font-size: 14px;
@@ -417,17 +416,43 @@ img {
 
 /* catalog */
 .name-user {
+  display: flex;
+  position: relative;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   color: var(--color-1-darkest);
-  width: 299px;
+  padding-left: 57px;
+  padding-right: 56px;
+  align-items: center;
+  height: 45px;
   background-color: var(--color-1-lightest);
   text-align: center;
   margin: 0;
-  padding: 12px;
 }
+
+.name-user::before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url("/img/icons/icon-header/icon-user.svg");
+  position: absolute;
+  left: 21px;
+  top: 13px;
+}
+
+
+.name-user::after{
+  content: "";
+  width: 20px;
+  height: 18px;
+  background-image: url("/img/icons/icon-header/icon-logout.svg");
+  position: absolute;
+  right: 17px;
+  top: 13px;
+}
+
 
 .my-order,
 .personal-cabinet {
@@ -986,7 +1011,6 @@ img {
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
 }
 
-
 .goods-list,
 .producer-list,
 .service-list,
@@ -995,6 +1019,13 @@ img {
   margin: 0;
   margin-top: 48px;
   margin-bottom: 20px;
+}
+
+.catalog-pagination-list {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 48px;
+  margin-bottom: 59px;
 }
 
 .catalog-pagination-item {
@@ -1151,7 +1182,6 @@ img {
 .footer-information {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .footer-list {
@@ -1203,6 +1233,7 @@ img {
 .container-footer {
   display: flex;
   justify-content: space-between;
+  min-height: 107px;
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px; */
