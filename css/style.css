@@ -87,7 +87,7 @@
   --color-lighter-shade-6: #EBEBEB;
   --color-lighter-shade-7: #F1F5F7;
   --color-lighter-shade-8: #F3F7F9;
-
+  --color-lighter-shade-9: #F4F4F4;
 
   --basic-light-blue: #3BBCE3;
   --basic-lighter-blue: #76D0EB;
@@ -119,6 +119,8 @@
 
   --basic-grey-rgb: 169, 169, 169;
   --basic-lightgrey-rgb: 197, 197, 197;
+
+  --color-shadow-modal: rgba(0, 0, 0, 0.75);
 
   --svg-grey-blue: #697180;
   --svg-dark-blue: #3D546F;
@@ -2162,3 +2164,103 @@ img {
   color: var(--basic-bright-red);
 }
 
+.modal {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.modal-write-us {
+  top: 140px;
+  bottom: auto;
+  right: auto;
+  background-color: var(--basic-color-white);
+  box-shadow: 0 20px 40px var(--color-shadow-modal);
+}
+.form-write-us {
+  width: 620px;
+  height: 430px;
+  border-top: 7px solid var(--basic-bright-red);
+}
+
+.modal-wrapper-write {
+  display: flex;
+  width: 460px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-wrapper-text {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 460px;
+}
+
+.modal-name,
+.modal-email {
+  margin: 0;
+  margin-top: 39px;
+}
+
+.modal-email {
+  margin-left: 20px;
+}
+
+.form-write-us input[type="name"],
+.form-write-us input[type="email"]{
+  display: flex;
+  box-sizing: border-box;
+  width: 220px;
+  height: 38px;
+  padding-left: 10px;
+  margin-top: 11px;
+  border: 2px solid var(--basic-light-grey);
+  border-radius: 2px;
+  margin:0;
+}
+
+.modal-title {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-color-black);
+}
+
+.modal-text {
+  margin: 0;
+  margin-top: 13px;
+}
+
+.form-write-us input[type="text"] {
+  display: flex;
+  box-sizing: border-box;
+  width: 460px;
+  height: 114px;
+  padding-left: 10px;
+  margin-top: 11px;
+  border: 2px solid var(--basic-light-grey);
+  border-radius: 2px;
+}
+
+.modal-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 620px;
+  height: 112px;
+  margin-top: 37px;
+  background-color: var(--color-lighter-shade-9);
+}
+
+.modal-button-write {
+  width: 460px;
+  height: 38px;
+}

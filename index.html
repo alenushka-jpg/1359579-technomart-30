@@ -394,22 +394,31 @@
        </div>
      </div>
     </footer>
-      <section>
-       <form action="#" method="post">
-         <p>
-           <label for="write-us-name">Ваше имя</label>
-           <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
-         </p>
-         <p>
-           <label for="write-us-email">Ваш e-mail:</label>
-           <input id="write-us-email" type="text" name="email" placeholder="email@example.com">
-         </p>
-         <p>
-           <label for="write-us-letter">Текст письма:</label>
-           <input id="write-us-letter" type="text" name="letter" placeholder="В свободной форме:">
-         </p>
-         <button class="button" type="submit">отправить</button>
-         <button class="button-close" type="button">Закрыть</button>
+      <section class="modal modal-write-us">
+       <form class="form-write-us" action="#" method="post">
+        <div class="modal-wrapper-write">
+          <p class="modal-title modal-name">
+            <label for="write-us-name">Ваше имя</label>
+            <input id="write-us-name" type="name" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-title modal-email">
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <div class="modal-wrapper-text">
+          <p class="modal-title modal-text">
+            <label for="write-us-letter">Текст письма:</label>
+            <input id="write-us-letter" type="text" name="letter" placeholder="В свободной форме:">
+          </p>
+        </div>
+        <div class="modal-button-wrapper">
+          <button class="modal-button-write button" class="button" type="submit">отправить</button>
+        </div>
+        <!-- <div class="modal-button-wrapper">
+
+          <button class="button-close" type="button">Закрыть</button>
+        </div> -->
        </form>
       </section>
   </body>
