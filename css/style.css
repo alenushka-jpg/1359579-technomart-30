@@ -66,6 +66,7 @@
   --basic-light-grey: #C5C5C5;
   --color-light-grey-1: #D7DCDE;
   --color-light-grey-2:  #E9E9E9;
+  --color-light-grey-3:  #E9E9E9;
 
   --color-dark-grey-1: #ADAAA5;
   --color-dark-grey-2: #B2B2B2;
@@ -2165,7 +2166,9 @@ img {
 }
 /* dropdown-modal */
 
-.modal-write-us {
+.modal-write-us,
+.modal-map,
+.modal-basket{
   position: fixed;
   display: none;
   left: 50%;
@@ -2174,12 +2177,21 @@ img {
   transform: translate(-50%,-50%);
   box-shadow: 0 20px 40px var(--color-shadow-modal);
   background-color: var(--basic-color-white);
+  border-top: 7px solid var(--basic-bright-red);
+}
+
+.modal-map {
+  width: 943px;
+  height: 449px;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .form-write-us {
   width: 620px;
   height: 430px;
-  border-top: 7px solid var(--basic-bright-red);
 }
 
 .modal-wrapper-write {
@@ -2266,7 +2278,7 @@ img {
 .modal-close {
   position: absolute;
   right: 11px;
-  top: 21px;
+  top: 7px;
   width: 21px;
   height: 21px;
   border: 0;
@@ -2292,4 +2304,71 @@ img {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-basket {
+  width: 620px;
+  height: 282px;
+}
+
+.product-added,
+.dropdown-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.product-added {
+  height: 170px;
+}
+
+.modal-basket-text {
+  position: relative;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: 66px;
+}
+
+.modal-basket-text::after {
+  position: absolute;
+  content: "";
+  left: -78px;
+  top: -20px;
+  width: 66px;
+  height: 66px;
+  background-image: url("../img/icons/icon-mark.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.dropdown-buttons {
+  align-items: center;
+  height: 112px;
+  background-color: var(--color-light-grey-3);
+}
+
+.button-checkout,
+.link-continue-shopping {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  width: 192px;
+  text-transform: uppercase;
+}
+
+.button-checkout {
+  border: 0;
+  color: var(--basic-color-white);
+  background-color: var(--basic-bright-red);
+  padding: 10px;
+}
+
+.link-continue-shopping {
+  background-color: var(--basic-color-white);
+  color:  var(--basic-color-black);
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
 }
