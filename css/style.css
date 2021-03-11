@@ -575,7 +575,7 @@ img {
   fill: var(--svg-dark-blue);
 }
 
-.name-user:active .user,
+.name-user:active .user ,
 .name-user:active .user .svg-icon-user path,
 .svg-icon-logout path:active,
 .name-user:active .svg-icon-logout path {
@@ -1334,7 +1334,12 @@ img {
   color: var(--basic-color-white);
 }
 
-.service-slider-button:active,
+.service-slider-button:active {
+  background-color: var(--basic-color-white);
+  color: var(--basic-darker-blue);
+  box-shadow: none;
+}
+
 .slider-desription-active {
   background-color: var(--basic-color-white);
   color: var(--basic-darker-blue);
