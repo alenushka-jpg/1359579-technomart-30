@@ -528,21 +528,21 @@ img {
   padding-top: 4px;
 }
 
-
-
-.name-user {
-  display: flex;
+.user {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-color-black);
+}
+
+.name-user {
+  display: flex;
   padding-left: 57px;
   padding-right: 56px;
   align-items: center;
   height: 45px;
   background-color: var(--basic-color-white);
-  text-align: center;
   margin: 0;
 }
 
@@ -566,13 +566,17 @@ img {
   right: 17px;
 }
 
-.name-user:hover .svg-icon-user path,
+
 .svg-icon-logout path:hover {
   fill: var(--svg-dark-blue);
 }
 
-.name-user:active,
-.name-user:active .svg-icon-user path,
+.user:hover:not(.svg-icon-logout) .svg-icon-user path{
+  fill: var(--svg-dark-blue);
+}
+
+.name-user:active .user,
+.name-user:active .user .svg-icon-user path,
 .svg-icon-logout path:active,
 .name-user:active .svg-icon-logout path {
   color: var(--basic-light-grey);
@@ -934,7 +938,7 @@ img {
   transform: translate(24px, 122px);
   width: 22px;
   height: 40px;
-  background-image: url("../img/icons/icon-main/icon-left.svg");
+  background-image: url("../img/icons/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
@@ -1330,7 +1334,8 @@ img {
   color: var(--basic-color-white);
 }
 
-.service-slider-button:active {
+.service-slider-button:active,
+.slider-desription-active {
   background-color: var(--basic-color-white);
   color: var(--basic-darker-blue);
   box-shadow: none;
@@ -1589,6 +1594,7 @@ img {
 
 .price-controls {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin-bottom: 39px;
 }
@@ -1610,7 +1616,7 @@ img {
   position: absolute;
   width: 10px;
   height: 1px;
-  left: -20px;
+  left: 105px;
   top: 20px;
   background-color: var(--basic-darkest-grey);
 }
@@ -2165,25 +2171,24 @@ img {
 }
 
 .footer-navigation-link:hover {
-  border-bottom: 1px solid var(--color-lighter-shade-7);
+  text-decoration: 1px underline var(--color-lighter-shade-7);
 }
 
 .footer-navigation-link:active {
-  border-bottom: none;
+  text-decoration: none;
   opacity: 0.5;
 }
-
 
 .footer-link {
   color: var(--color-lighter-yellow-2);
 }
 
 .footer-link:hover {
- border-bottom: 1px solid var(--color-lighter-yellow-2);
+  text-decoration: 1px underline var(--color-lighter-yellow-2);
 }
 
 .footer-link:active {
-  border-bottom: none;
+  text-decoration: none;
   opacity: 0.5;
 }
 
@@ -2258,7 +2263,7 @@ img {
 }
 
 .footer-email:hover {
-   text-decoration: 1px underline var(--color-lighter-yellow-2);
+ text-decoration: 1px underline var(--color-lighter-yellow-2);
 }
 
 .footer-email:active {
