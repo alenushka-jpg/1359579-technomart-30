@@ -275,11 +275,11 @@ img {
   display: flex;
   position: relative;
   padding-left: 37px;
-  margin-left: 14px;
+  margin-left: 15px;
 }
 
 .full-basket{
-  padding-left: 33px;
+  padding-left: 32px;
   background-color: var(--basic-bright-red);
 }
 
@@ -357,7 +357,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 41px;
+  padding-bottom: 40px;
 }
 
 .store-description {
@@ -633,12 +633,12 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 60px;
+  padding-top: 62px;
 }
 
 .product-item {
   width: 300px;
-  padding-bottom: 21px;
+  padding-bottom: 23px;
   padding-right: 23px;
 }
 
@@ -1374,7 +1374,8 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-color-black);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  margin-top: 4px;
 }
 
 .company-item {
@@ -1402,7 +1403,7 @@ img {
 }
 
 .company-bottom-indent {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 
 .company-contacts {
@@ -1417,13 +1418,13 @@ img {
 
 .wrapper-about-company {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 460px auto;
   margin-bottom: 70px;
-  margin-top: 66px;
-  grid-gap: 191px;
+  margin-top: 70px;
+  grid-gap: 180px;
 }
 
-/* Хлебные крошки каталог */
+/* Хлебные крошки --> каталог */
 
 .breadcrumbs-list,
 .perforator-list {
@@ -1434,32 +1435,27 @@ img {
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
+  padding-right: 27px;
   color: var(--basic-color-black);
 }
-
-/* main-catalog */
 
 .breadcrumbs-list {
   position: relative;
   padding: 0;
   margin: 0;
   margin-left: 12px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 18px;
+  margin-bottom: 21px;
   text-transform: uppercase;
 }
 
-.breadcrumbs-item :first-child {
-  padding-left: 3px;
-}
-
-.breadcrumbs-list::before {
+.main-page::before {
   content: "";
   position: absolute;
   width: 14px;
   height: 12px;
-  top: 6px;
-  left: -12px;
+  top: 3px;
+  right: 27px;
   background: url("../img/icons/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1468,10 +1464,14 @@ img {
 .breadcrumbs-item {
   display: inline;
   position: relative;
-  margin-left: 38px;
+  margin-left: 12px;
 }
 
-.breadcrumbs-item::before {
+.breadcrumbs-item:first-child {
+  margin-left: 30px;
+}
+
+.breadcrumbs-item:not(:first-child)::before {
   content: "";
   width: 8px;
   height: 12px;
@@ -1553,7 +1553,7 @@ img {
   position: relative;
   height: 41px;
   margin-bottom: 9px;
-  padding-top: 39px;
+  padding-top: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: var(--color-lighter-shade-1);
@@ -1664,7 +1664,7 @@ img {
   position: absolute;
   height: 1px;
   width: 220px;
-  top: -18px;
+  top: -17px;
   background-color: var(--color-light-shade-2);
 }
 
@@ -1775,15 +1775,16 @@ img {
   background-color: var(--basic-color-white);
   outline: none;
   border: 1px solid var(--color-light-shade-2);
+  cursor: pointer;
 }
 
 .wrapper-sorting {
   display: grid;
-  grid-template-columns: 220px 390px 1fr;
+  grid-template-columns: 220px 390px 90px;
   background-color: var(--color-lighter-shade-1);
   margin-left: 20px;
-  padding-top: 5px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .sorting-title {
@@ -1816,11 +1817,11 @@ img {
 .block-shape {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
-  padding-left: 13px;
+  padding-top: 7px;
+  padding-left: 14px;
   display: flex;
   width: 75px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   position: relative;
 }
@@ -1882,7 +1883,7 @@ img {
 .perforator-list {
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 27px;
   padding-left: 20px;
   grid-gap: 17px;
 }
@@ -1896,6 +1897,7 @@ img {
 
 .bosch-image,
 .producer-image {
+  object-fit: contain;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1946,6 +1948,7 @@ img {
   border: 1px solid var(--color-light-shade-1);
   width: 220px;
   height: 318px;
+  margin-top: -2px;
 }
 
 .perforator-item:hover {
@@ -1960,18 +1963,22 @@ img {
 }
 
 .catalog-pagination-list {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding-left: 20px;
-  margin-top: 48px;
-  margin-bottom: 59px;
+  margin-top: 56px;
+  margin-bottom: 44px;
 }
 
 .catalog-pagination-item {
-  display: inline;
+  margin-bottom: 20px;
+  margin-right: 4px;
 }
 
 .pagination-link {
   padding: 10px 15px;
+  margin-right: 5px;
   border: 1px solid var(--color-lighter-shade-6);
   border-radius: 2px;
   color: var(--basic-color-black);
@@ -2077,8 +2084,8 @@ img {
 /* Пара слов о перфораторах */
 .section-about-perforators {
   background-color: var(--color-lighter-shade-7);
-  padding-top: 76px;
-  padding-bottom: 70px;
+  padding-top: 65px;
+  padding-bottom: 69px;
 }
 
 .about-perforators {
@@ -2168,6 +2175,7 @@ img {
 }
 
 .footer-phone {
+  margin-top: 2px;
   color: var(--color-lighter-shade-8);
 }
 
@@ -2210,7 +2218,7 @@ img {
 .footer-social {
   display: flex;
   width: 300px;
-  padding-left: 131px;
+  padding-left: 135px;
   padding-top: 5px;
 }
 
@@ -2254,7 +2262,7 @@ img {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 19px;
   align-items: center;
   color: var(--basic-color-white);
 }
@@ -2291,6 +2299,9 @@ img {
   border-top: 7px solid var(--basic-bright-red);
 }
 
+.modal-show {
+  display: block;
+}
 .modal-map {
   width: 943px;
   height: 449px;
