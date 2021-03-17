@@ -1,22 +1,11 @@
-const buyButtons = document.querySelectorAll(".button-buy");
-const basketModal = document.querySelector(".modal-basket");
-const closeLogin = basketModal.querySelector(".modal-close");
 
-buyButtons.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  basketModal.classList.add("modal-show");
-  console.log("Клик по кнопке купить");
-});
-
-closeLogin.addEventListener("click", function (evt) {
-evt.preventDefault();
-basketModal.classList.remove("modal-show");
-});
-
+// выпадающая модал-карта
 const mapButton = document.querySelector(".company-contacts-img");
 const mapPopup = document.querySelector(".modal-map");
 const mapClose = mapPopup.querySelector(".modal-close");
 
+
+// выпадающая модал-карта
 mapButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapPopup.classList.add("modal-show");

@@ -90,22 +90,22 @@
         <div class="wrapper-perforators">
           <section class="slider">
             <div class="slider-controls">
-             <button class="slider-circle current" type="button" aria-label="Первый слайд"></button>
-             <button class="slider-circle" type="button" aria-label="Второй слайд"></button>
+             <button class="circle slider-circle-1 current" type="button" aria-label="Первый слайд"></button>
+             <button class="circle slider-circle-2" type="button" aria-label="Второй слайд"></button>
            </div>
            <div class="prev-next-controls">
-            <button class="next-right" type="button" aria-label="Предыдущий слайд"></button>
-            <button class="last-left" type="button" aria-label="Следующий слайд"></button>
+            <button class="last-left" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="next-right" type="button" aria-label="Следующий слайд"></button>
            </div>
             <ul class="slider-product-list">
-              <li class="slider-product-item slide-current">
-                <img class="slider-img" src="img/perforators.png" alt="На строительном объекте, стоит мужчина в каске, шумозащитных наушниках, очках и перчатках. В руках он держит перфоратор Bosch, которым сверлит стену">
+              <li class="slider-product-item main-slide-1 current-slide">
+                <img class="slider-img" src="img/perforators.png" width="620" height="266" alt="На строительном объекте, стоит мужчина в каске, шумозащитных наушниках, очках и перчатках. В руках он держит перфоратор Bosch, которым сверлит стену">
                 <h3 class="slider-title">Перфораторы</h3>
                 <p class="slider-text">Настоящие мужские игрушки</p>
                 <a class="button slide-button" href="catalog.html">открыть каталог</a>
               </li>
-             <li class="slider-product-item slide">
-                <img class="slider-img" src="img/drills.png"  alt="На строительном объекте, стоит мужчина в каске, берушах, очках и перчатках. В руках он держит дрель Bosch, которым сверлит кирпичную стену">
+             <li class="slider-product-item main-slide-2">
+                <img class="slider-img" src="img/drills.png" width="620" height="266" alt="На строительном объекте, стоит мужчина в каске, берушах, очках и перчатках. В руках он держит дрель Bosch, которым сверлит кирпичную стену">
                 <h3 class="slider-title">Дрели</h3>
                 <p class="slider-text">Соседям на радость</p>
                 <a class="button slide-button" href="catalog.html">открыть каталог</a>
@@ -242,74 +242,85 @@
            <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
            <p class="service-text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
            <div class="wrapper-slider-service">
-            <ul class="servise-slider-list">
-              <li class="service-slider-item slider-desription-active">
-                 <button class="service-slider-button" type="button" aria-label="Перейти к условиям доставки">Доставка</button>
+            <ul class="service-slider-list">
+              <li class="service-slider-item">
+                 <button class="service-slider-button service-slider-1 slider-desription-active" type="button" aria-label="Перейти к условиям доставки">Доставка</button>
               </li>
               <li class="service-slider-item">
-                 <button class="service-slider-button" type="button" aria-label="Перейти к описанию гарантии">Гарантия</button>
+                 <button class="service-slider-button service-slider-2" type="button" aria-label="Перейти к описанию гарантии">Гарантия</button>
               </li>
               <li class="service-slider-item">
-                 <button class="service-slider-button" type="button" aria-label="Перейти к условиям кредитования">Кредит</button>
+                 <button class="service-slider-button service-slider-3" type="button" aria-label="Перейти к условиям кредитования">Кредит</button>
               </li>
             </ul>
            <ul class="slider-service-description">
-             <li class="slider-desription-item slide-current-service">
+             <li class="slider-desription-item slide-delivery slide-current-service">
                <h3 class="slider-service-title service-delivery">Доставка</h3>
                <p class="slider-service-text">
-                 Мы с удовольствием доставим ваш товар прямо <br>
-                 к вашему подъезду совершенно бесплатно! <br>
-                 Ведь мы неплохо заработаем, <br>
-                 поднимая его на ваш этаж!</p>
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно!
+                </p>
+               <p class="slider-service-text">
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
              </li>
-             <li class="slider-desription-item slide-service">
+             <li class="slider-desription-item slide-guarantee slide-service">
                <h3 class="slider-service-title service-guarantee">Гарантия</h3>
                <p class="slider-service-text service-guarantee-text">
-                 Если купленный у нас товар поломается или заискрит, <br>
-                 а также в случае пожара, спровоцированного его <br>
-                 возгоранием,  вы всегда можете быть уверены в нашей <br>
-                 гарантии. Мы обменяем сгоревший товар на новый. <br>
-                 Дом уж восстановите как-нибудь сами.</p>
+                  Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его <br>
+                  возгоранием,  вы всегда можете быть уверены в нашей <br>
+                  гарантии. Мы обменяем сгоревший товар на новый.
+                </p>
+                <p class="slider-service-text service-guarantee-text">
+                  Дом уж восстановите как-нибудь сами.
+                </p>
              </li>
-             <li class="slider-desription-item slide-service">
+             <li class="slider-desription-item slide-credit slide-service">
                <h3 class="slider-service-title service-credit">Кредит</h3>
                <p class="slider-service-text">
-                 Залезть в долговую яму стало проще! <br>
-                 Кредитные консультанты придут вам на помощь.</p>
+                  Залезть в долговую яму стало проще! <br>
+               </p>
+               <p class="slider-service-text">
+                  Кредитные консультанты придут вам на помощь.
+               </p>
                <button class="button button-indent" type="submit" aria-label="отправить заявку на кредит">отправить заявку</button>
              </li>
            </ul>
            </div>
-
         </div>
       </section>
       <section class="container-center">
         <div class="wrapper-about-company">
           <h2 class="visually-hidden">Небольшая информация о нас:</h2>
-         <div>
-           <h3 class="company-title">Компания &laquo;Техномарт&raquo;</h3>
-           <p class="company-text company-bottom-indent">
+          <div>
+            <h3 class="company-title">Компания &laquo;Техномарт&raquo;</h3>
+            <p class="company-text company-bottom-indent">
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
               ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах.
-           </p>
-           <p class="company-text">
-              Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+            </p>
+            <p class="company-text">
+              Мы можем доставить ваш товар в самые отдаленные точки России!
+            </p>
+            <p class="company-text">
               Техномарт работает со многими транспортными компаниями:
            </p>
-           <ul class="company-list">
+            <ul class="company-list">
               <li class="company-item">Деловые линии</li>
               <li class="company-item">Автотрейдинг</li>
               <li class="company-item">ЖелДорЭкспедиция</li>
-           </ul>
-           <a class="button button-indent" href="blank.html" aria-label="Узнать больше о компании">Подробнее о компании</a>
-        </div>
-        <div>
-         <h2 class="company-title">Контакты</h2>
-         <p class="company-contacts">Вы можете забрать товар сами, заехав в наш офис:</p>
-         <p class="company-contacts-img" aria-label="Открыть интерактивную карту проезда">
-            <img src="img/map-address.png" alt="Карта с адресом магазина"/>
-         </p>
-         <a class="button link-indent" href="blank.html" aria-label="Можете нам написать и вы получите обратную связь">Заблудились? Напишите нам!</a>
+            </ul>
+            <a class="button button-indent" href="blank.html" aria-label="Узнать больше о компании">Подробнее о компании</a>
+          </div>
+          <div>
+            <h2 class="company-title">Контакты</h2>
+            <p class="company-contacts">Вы можете забрать товар сами, заехав в наш офис:</p>
+            <a class="company-contacts-img" aria-label="Открыть интерактивную карту проезда">
+              <img src="img/map-address.png" width="300" height="158" alt="Карта с адресом магазина"/>
+            </a>
+            <a class="button link-indent button-write-us" href="blank.html" aria-label="Можете нам написать и вы получите обратную связь">Заблудились? Напишите нам!</a>
+          </div>
         </div>
       </section>
      </main>
@@ -339,7 +350,7 @@
           </ul>
         </div>
         <div class="wrapper-footer-inner">
-         <p class="footer-information" aria-label="Наш адрес город Санкт-Петербург, улица Большая Конюшенная, дом 19 корпус 8">
+         <p class="footer-information">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
            <a class="footer-phone" href="tel:+78125550555" aria-label="Контактный телефон +7 812 55-50-555">+7 (812) 555-05-55</a>
          </p>
@@ -361,7 +372,7 @@
       </section>
       <div class="footer-background">
         <div class="container-footer  container-center">
-         <p class="footer-copyright">&#169; 2010 &ndash; 2019 Компания «Техномарт» <br> Все права защищены</p>
+         <p class="footer-copyright">&#169; 2010&ndash;2019 Компания «Техномарт» <br> Все права защищены</p>
          <section class="footer-social">
            <h2 class="visually-hidden">Социальные сети:</h2>
            <ul class="social-list">
@@ -396,16 +407,16 @@
        </div>
      </div>
     </footer>
-      <section class="modal-write-us">
+      <section class="modal modal-write-us">
         <h2 class="visually-hidden">Форма обратной связи:</h2>
        <form class="form-write-us" action="#" method="post">
         <div class="modal-wrapper-write">
           <p class="modal-title modal-name">
-            <label for="write-us-name" aria-label="Введите ваше имя и фамилию">Ваше имя</label>
+            <label class="bottom-indent" for="write-us-name" aria-label="Введите ваше имя и фамилию">Ваше имя</label>
             <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="modal-title modal-email">
-            <label for="write-us-email" aria-label="Введите ваш e-mail">Ваш e-mail:</label>
+            <label  class="bottom-indent" for="write-us-email" aria-label="Введите ваш e-mail">Ваш e-mail:</label>
             <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
           </p>
         </div>
@@ -416,19 +427,19 @@
           </p>
         </div>
         <div class="modal-button-wrapper">
-          <button class="modal-button-write button" class="button" type="submit" aria-label="Отправить форму">отправить</button>
+          <button class="modal-button-write button" type="submit" aria-label="Отправить форму">отправить</button>
         </div>
-        <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+        <button class="modal-close close-write" type="button" aria-label="Закрыть форму"></button>
        </form>
       </section>
-      <section class="modal-map">
+      <section class="modal modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.0775840131087!2d30.31522170504711!3d59.93979489865105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615200593425!5m2!1sru!2sru"
-          width="943" height="442"  allowfullscreen title="Офис магазина находится по адресу Большая Конюшенная улица 19">
+          width="940" height="440"  allowfullscreen title="Офис магазина находится по адресу Большая Конюшенная улица 19">
         </iframe>
-        <button class="modal-close" type="button" aria-label="Закрыть карту"></button>
+        <button class="modal-close  close-map" type="button" aria-label="Закрыть карту"></button>
       </section>
-      <section class="modal-basket">
+      <section class="modal modal-basket">
         <div class="product-added">
           <h2 class="modal-basket-text">Товар добавлен в корзину!</h2>
         </div>
@@ -436,9 +447,12 @@
          <button class="button-checkout" type="button">Оформить заказ</button>
          <a class="link-continue-shopping" href="catalog.html">Продолжить покупки</a>
        </div>
-        <button class="modal-close" type="button" aria-label="закрыть уведомление"></button>
+        <button class="modal-close close-basket" type="button" aria-label="закрыть уведомление"></button>
       </section>
-
-     <script src="js/script.js"></script>
+     <script src="js/script-slider-product.js"></script>
+     <script src="js/script-slider-service.js"></script>
+     <script src="js/script-basket.js"></script>
+     <script src="js/script-map.js"></script>
+     <script src="js/script-write-us.js"></script>
   </body>
 </html>
