@@ -895,7 +895,7 @@ img {
   transform: translate(295px, -36px);
 }
 
-.circle {
+.circle-slide {
   outline: 0;
   padding: 0;
   width: 10px;
@@ -917,32 +917,36 @@ img {
   cursor: pointer;
 }
 
-.last-left{
+.last-left {
   border: 0;
   outline: 0;
   position: absolute;
-  right: 0;
-  transform: translate(-20px, 122px);
-  width: 22px;
-  height: 40px;
-  background-image: url("../img/icons/icon-right.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: transparent;
-}
-
-.next-right  {
-  border: 0;
-  outline: 0;
-  position: absolute;
-  left: 0;
-  transform: translate(24px, 122px);
+  left: 24px;
+  top: 122px;
   width: 22px;
   height: 40px;
   background-image: url("../img/icons/icon-left.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: transparent;
+  z-index: 666;
+  cursor: pointer;
+}
+
+.next-right{
+  border: 0;
+  outline: 0;
+  position: absolute;
+  right: 20px;
+  top: 122px;
+  width: 22px;
+  height: 40px;
+  background-image: url("../img/icons/icon-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  z-index: 666;
+  cursor: pointer;
 }
 
 .current-slide {
@@ -982,6 +986,7 @@ img {
   padding-right: 47px;
   padding-left: 46px;
   padding-bottom: 9px;
+  margin-bottom: 7px;
 }
 
 .product-purchase-list {
@@ -1014,6 +1019,10 @@ img {
   padding-bottom: 10px;
   padding-left: 12px;
   padding-right: 13px;
+}
+
+.btn-top {
+  margin-top: 30px;
 }
 
 .link-indent {
@@ -1208,7 +1217,7 @@ img {
   margin-bottom: 99px;
 }
 
-.servise-slider-list::after {
+.service-slider-list::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -1264,12 +1273,12 @@ img {
   padding-top: 12px;
 }
 
-.slide-current-service {
-  display: block;
-}
-
 .slide-service {
   display: none;
+}
+
+.slide-current-service {
+  display: block;
 }
 
 .slider-service-title {
@@ -1337,13 +1346,9 @@ img {
   color: var(--basic-color-white);
 }
 
-.service-slider-button:active {
-  background-color: var(--basic-color-white);
-  color: var(--basic-darker-blue);
-  box-shadow: none;
-}
-
-.slider-desription-active {
+.slider-desription-active,
+.slider-desription-active:active,
+.slider-desription-active:focus {
   background-color: var(--basic-color-white);
   color: var(--basic-darker-blue);
   box-shadow: none;
@@ -2306,7 +2311,6 @@ img {
 
 .modal-basket {
   width: 620px;
-  min-height: 280px;
   left: 51%;
   top: 50%;
   display: none;

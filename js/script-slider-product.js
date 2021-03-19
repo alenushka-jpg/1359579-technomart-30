@@ -1,37 +1,49 @@
-const leftArrow = document.querySelector(".last-left");
-const rightArrow = document.querySelector(".next-right");
-const oneSlide = document.querySelector(".main-slide-1");
-const twoSlide = document.querySelector(".main-slide-2");
-const oneCircle = document.querySelector(".slider-circle-1");
-const twoCircle = document.querySelector(".slider-circle-2");
+const slides = document.querySelectorAll(".slider-product-item");
+const dots = document.querySelectorAll(".circle-slide");
 
+const prev = document.querySelector(".last-left");
+const next = document.querySelector(".next-right");
 
-leftArrow&&leftArrow.addEventListener("click", function() {
-  twoSlide.classList.toggle("current-slide"),
-  oneCircle.classList.toggle("current"),
-  twoCircle.classList.toggle("current")
-}),
+let slideIndex = 1;
+showDivs(slideIndex);
 
-rightArrow&&rightArrow.addEventListener("click", function() {
-  oneSlide.classList.toggle("current-slide"),
-  twoSlide.classList.toggle("current-slide"),
-  oneCircle.classList.toggle("current"),
-  twoCircle.classList.toggle("current")
-}),
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-oneCircle&&oneCircle.addEventListener("click", function() {
-  oneCircle.classList.add("current"),
-  twoCircle.classList.remove("current"),
-  oneSlide.classList.add("current-slide"),
-  twoSlide.classList.remove("current-slide")
-}),
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
 
-twoCircle&&twoCircle.addEventListener("click", function() {
-  twoCircle.classList.add("current"),
-  oneCircle.classList.remove("current"),
-  twoSlide.classList.add("current-slide"),
-  oneSlide.classList.remove("current-slide")
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    currentDiv(i+1);
+  })
+}
+
+prev.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  plusDivs(-1);
 });
 
+next.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  plusDivs(1);
+});
 
+function showDivs(n) {
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("current-slide");
+  }
 
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("current");
+  }
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  slides[slideIndex-1].classList.add("current-slide");
+  dots[slideIndex-1].classList.add("current");
+}
