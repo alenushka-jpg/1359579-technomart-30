@@ -74,6 +74,7 @@
   --color-dark-grey-4: #ABABAB;
   --color-dark-grey-5:  #B5B5B5;
   --color-dark-grey-6:  #999999;
+  --color-dark-grey-7:  #8E939C;
   --basic-darkest-grey: #444444;
 
   --basic-color-white: #FFFFFF;
@@ -133,7 +134,7 @@
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif ;
+  font-family: "PT Sans", "Arial", sans-serif ;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -210,7 +211,7 @@ img {
 }
 
 .header-input {
-  font-family: "Cuprum", Arial, sans-serif ;
+  font-family: "Cuprum", "Arial", sans-serif ;
   font-size: 18px;
   line-height: 24px;
   width: 270px;
@@ -257,7 +258,7 @@ img {
 
 .header-link {
   color: var(--basic-color-white);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -362,7 +363,7 @@ img {
 
 .store-description {
   width: 197px;
-  font-family: "Cuprum italic", Arial, sans-serif;
+  font-family: "Cuprum italic", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -389,7 +390,7 @@ img {
 }
 
 .contacts-phone  {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 25px;
@@ -408,7 +409,7 @@ img {
 }
 
 .contacts-information {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -444,7 +445,7 @@ img {
 .registration-link {
   display: flex;
   min-height: 45px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
@@ -509,7 +510,7 @@ img {
   padding-bottom: 14px;
   padding-right: 28px;
   padding-left: 28px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -522,6 +523,7 @@ img {
 
 .header-navigation-link[href]:active {
   background-color: var(--color-dark-blue-2);
+  color: var(--color-dark-grey-7);
 }
 
 /* catalog */
@@ -533,7 +535,10 @@ img {
 }
 
 .user {
-  font-family: "Cuprum", Arial, sans-serif;
+  display: block;
+  padding-left: 57px;
+  padding-right: 56px;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 21px;
   line-height: 21px;
@@ -542,8 +547,8 @@ img {
 
 .name-user {
   display: flex;
-  padding-left: 57px;
-  padding-right: 56px;
+  /* padding-left: 57px;
+  padding-right: 56px; */
   align-items: center;
   height: 45px;
   background-color: var(--basic-color-white);
@@ -578,17 +583,17 @@ img {
   fill: var(--svg-dark-blue);
 }
 
-.name-user:active .user ,
-.name-user:active .user .svg-icon-user path,
-.svg-icon-logout path:active,
-.name-user:active .svg-icon-logout path {
+.user:active,
+.user:active path,
+.svg-icon-user:active path,
+.svg-icon-logout:active path {
   color: var(--basic-light-grey);
   fill: var(--basic-light-grey);
 }
 
 .personal-cabinet,
 .my-order {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -621,7 +626,7 @@ img {
 }
 
 .modal-link {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -663,7 +668,7 @@ img {
 
 .product-title {
   color: var(--basic-color-white);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 31px;
@@ -764,7 +769,7 @@ img {
 
 .product-link {
   color: var(--basic-color-white);
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -974,7 +979,7 @@ img {
   left: 24px;
   top: 23px;
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 38px;
   line-height: 37px;
@@ -987,7 +992,7 @@ img {
   top: 64px;
   left: 24px;
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -1017,7 +1022,7 @@ img {
 
 .button {
   display: inline-block;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -1027,6 +1032,7 @@ img {
   border: 0;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .button-indent {
@@ -1096,7 +1102,7 @@ img {
 
 .popular-title {
   text-transform: uppercase;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1206,7 +1212,7 @@ img {
 .service-title,
 .company-title {
   margin: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1246,7 +1252,7 @@ img {
 }
 
 .service-slider-button {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 30px;
@@ -1297,7 +1303,7 @@ img {
 }
 
 .slider-service-title {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1393,7 +1399,7 @@ img {
   margin: 0;
   padding-left: 38px;
   padding-top: 1px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -1513,7 +1519,7 @@ img {
 }
 
 .catalog-title {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -1798,7 +1804,6 @@ img {
   border: 4px solid var(--color-light-grey-2);
 }
 
-
 .button-filter {
   width: 100%;
   padding-top: 9px;
@@ -1828,7 +1833,7 @@ img {
 
 .catalog-sorting-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 125px 117px 128px;
   list-style: none;
   margin: 0;
   padding-left: 20px;
@@ -1851,7 +1856,7 @@ img {
 .block-shape {
   margin: 0;
   padding: 0;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-left: 14px;
   display: flex;
   width: 75px;
@@ -2045,7 +2050,7 @@ img {
   width: 135px;
   padding: 8px 0;
   margin-left: 40px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -2125,7 +2130,7 @@ img {
 }
 
 .about-perforators {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -2181,7 +2186,7 @@ img {
 .footer-information,
 .footer-navigation-link,
 .footer-link {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -2295,7 +2300,7 @@ img {
   flex-wrap: wrap;
   margin: 0;
   width: 300px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -2414,7 +2419,7 @@ img {
 }
 
 .modal-title {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-color-black);
@@ -2515,7 +2520,7 @@ img {
   justify-content: center;
   height: 94px;
   position: relative;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 25px;
   line-height: 25px;
   font-weight: 700;
@@ -2543,7 +2548,7 @@ img {
 
 .button-checkout,
 .link-continue-shopping {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   width: 192px;
