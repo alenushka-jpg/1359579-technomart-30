@@ -1520,6 +1520,7 @@ img {
   display: inline-block;
   width: 14px;
   height: 12px;
+  vertical-align: middle;
 }
 
 .main-page::before {
